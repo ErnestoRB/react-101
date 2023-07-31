@@ -1,0 +1,6 @@
+article.Post {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  font-size: 0.9rem;
+}

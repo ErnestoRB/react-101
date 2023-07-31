@@ -1,0 +1,12 @@
+.Post-Author {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  font-weight: bold;
+  padding-block: 5px;
+}
+
+.Post-Author > .date {
+  font-weight: normal;
+  color: gray;
+}

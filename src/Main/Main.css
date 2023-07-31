@@ -1,0 +1,17 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 200px;
+  grid-template-areas: "content content side";
+  padding: 20px;
+  width: fit-content;
+  overflow-x: hidden;
+}
+
+main > div.content {
+  align-items: center;
+  grid-area: content;
+}
+
+div.side {
+  grid-area: side;
+}

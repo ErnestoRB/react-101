@@ -1,0 +1,6 @@
+.Stories {
+  display: flex;
+  overflow-x: auto;
+  flex-direction: row;
+  column-gap: 10px;
+}
