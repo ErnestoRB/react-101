@@ -4,7 +4,7 @@ export default function StoriesComponent({ stories = [] }) {
   return (
     <div className="Stories">
       {stories.map((story) => (
-        <StoryComponent isClose={true}></StoryComponent>
+        <StoryComponent isClose={false}></StoryComponent>
       ))}
     </div>
   );

@@ -1,0 +1,22 @@
+.Suggestions {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+}
+
+.showAll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    color: rgb(150, 150, 150);
+}
+
+.viewAll:hover{
+    cursor: pointer;
+    color: rgb(150, 150, 150);
+}
+  

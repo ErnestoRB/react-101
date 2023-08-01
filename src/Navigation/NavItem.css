@@ -8,6 +8,7 @@ a.Nav-Item {
   column-gap: 5px;
   border-radius: 10px;
   transition: background-color 0.5s ease;
+  background-color: white;
 }
 
 a.Nav-Item:hover {

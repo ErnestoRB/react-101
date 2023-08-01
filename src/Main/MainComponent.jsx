@@ -1,6 +1,8 @@
 import FeedComponent from "../Posts/FeedComponent";
 import MiniProfileComponent from "../Side/MiniProfileComponent";
 import StoriesComponent from "../Stories/StoriesComponent";
+import SuggestionsComponent from "../Side/SuggestionsComponent";
+import FooterComponent from "../Side/FooterComponent";
 import "./Main.css";
 
 export default function MainComponent() {
@@ -11,7 +13,9 @@ export default function MainComponent() {
         <FeedComponent></FeedComponent>
       </div>
       <div className="side">
-        <MiniProfileComponent></MiniProfileComponent>
+        <MiniProfileComponent isProfile></MiniProfileComponent>
+        <SuggestionsComponent suggestions={Array(5).fill({})}></SuggestionsComponent>
+        <FooterComponent></FooterComponent>
       </div>
     </main>
   );

@@ -1,0 +1,19 @@
+.Content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.Content > .links, p{
+    color: rgb(195, 195, 195);
+}
+
+.Content > .links:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Content p{
+    margin: 3px;
+}

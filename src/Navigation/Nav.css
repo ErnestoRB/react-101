@@ -1,17 +1,17 @@
 .Nav {
   height: 100vh;
-  max-width: 200px;
+  min-width: 230px;
   border-right: 0.5px solid rgb(209, 209, 209);
-  padding-inline: 20px;
-  padding-block: 20px;
+  padding-inline: 10px;
+  padding-block: 10px;
   display: flex;
   flex-direction: column;
 }
 
 .Title {
-  margin-block: 2.5rem;
+  margin-block: 1rem;
   font-family: "Galada", cursive;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .Routes {

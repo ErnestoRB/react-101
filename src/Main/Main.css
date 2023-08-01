@@ -1,8 +1,8 @@
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 200px;
+  grid-template-columns: 1fr 1fr 230px;
   grid-template-areas: "content content side";
-  padding: 20px;
+  padding: 40px;
   width: fit-content;
   overflow-x: hidden;
 }

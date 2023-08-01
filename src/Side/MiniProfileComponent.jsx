@@ -7,6 +7,7 @@ export default function MiniProfileComponent({
     username: "ernestorb",
     url: "https://avatars.githubusercontent.com/u/55329286?v=4",
   },
+  isProfile = false,
 }) {
   return (
     <div className="MiniProfile">
@@ -15,11 +16,13 @@ export default function MiniProfileComponent({
       </div>
       <div className="name">
         <b>{user.name}</b>
-        <span className="username">{user.username}</span>
+        <span className="username">
+          {isProfile ? user.username : "siguen esta cuenta"}
+        </span>
       </div>
       <div className="actions">
         <a href="#" className="blue-link">
-          Cambiar
+          {isProfile ? "Cambiar" : "Seguir"}
         </a>
       </div>
     </div>

@@ -15,20 +15,56 @@ const routes = [
     icono: "explore",
     descripcion: "Explorar",
   },
+  {
+    icono: "movie",
+    descripcion: "Reels",
+  },
+  {
+    icono: "mail",
+    descripcion: "Mensajes",
+  },
+  {
+    icono: "favorite",
+    descripcion: "Notificaciones",
+  },
+  {
+    icono: "add_box",
+    descripcion: "Crear",
+  },
+  {
+    icono: "account_circle",
+    descripcion: "Perfil",
+  },
 ];
 
 const dropdownItems = [
   {
-    icono: "home",
-    descripcion: "Inicio",
+    icono: "settings",
+    descripcion: "Configuracion",
   },
   {
-    icono: "search",
-    descripcion: "Buscar",
+    icono: "history",
+    descripcion: "Tu actividad",
   },
   {
-    icono: "explore",
-    descripcion: "Explorar",
+    icono: "bookmark",
+    descripcion: "Guardado",
+  },
+  {
+    icono: "light_mode",
+    descripcion: "Cambiar apariencia",
+  },
+  {
+    icono: "bug_report",
+    descripcion: "Reportar un problema",
+  },
+  {
+    icono: "",
+    descripcion: "Cambiar de cuenta",
+  },
+  {
+    icono: "",
+    descripcion: "Salir",
   },
 ];
 
