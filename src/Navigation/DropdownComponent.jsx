@@ -11,10 +11,14 @@ export default function DropdownComponent({
 }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="wrapper">
-      <button href={href} onClick={() => setOpen((open) => !open)}>
+    <div className="Dropdown-Wrapper">
+      <button
+        className="Dropdown-Button"
+        href={href}
+        onClick={() => setOpen((open) => !open)}
+      >
         {icono && <IconComponent icono={icono}></IconComponent>}
-        <span>{descripcion}</span>
+        <span className="Dropdown-Text">{descripcion}</span>
       </button>
       {open && (
         <div className="Dropdown">

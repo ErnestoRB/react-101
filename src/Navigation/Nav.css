@@ -1,6 +1,7 @@
 .Nav {
   height: 100vh;
-  min-width: 230px;
+  min-width: unset;
+  width: min-content;
   border-right: 0.5px solid rgb(209, 209, 209);
   padding-inline: 10px;
   padding-block: 10px;
@@ -8,21 +9,45 @@
   flex-direction: column;
 }
 
-.Title {
+.Nav > .Title {
+  text-align: center;
   margin-block: 1rem;
   font-family: "Galada", cursive;
   font-size: 1.8rem;
 }
 
-.Routes {
+.Nav > .Routes {
   display: flex;
   flex: 1;
   flex-direction: column;
 }
 
-.More,
-.Routes,
-.Title {
+.Nav > .More,
+.Nav > .Routes,
+.Nav > .Title {
   display: flex;
   flex-direction: column;
+}
+
+.Nav > .Title > span:nth-child(1) {
+  /* text */
+  display: none;
+}
+
+.Nav > .Title > span.Icon {
+  /* icon */
+  display: inline;
+}
+
+@media screen and (min-width: 700px) {
+  .Nav {
+    min-width: 230px;
+  }
+  .Nav > .Title > span:nth-child(1) {
+    display: inline;
+  }
+  .Nav > .Title > span.Icon {
+    /* icon */
+    display: none;
+  }
 }

@@ -18,3 +18,13 @@ a.Nav-Item:hover {
 a.Nav-Item:visited {
   color: black;
 }
+
+a.Nav-Item > span.Nav-Item-Text{
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  a.Nav-Item > span.Nav-Item-Text {
+    display: inline;
+  }
+}

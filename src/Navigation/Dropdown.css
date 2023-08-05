@@ -1,17 +1,17 @@
-button {
+.Dropdown-Button {
   background-color: #fff;
   border: none;
   outline: none;
   width: 100%;
 }
 
-.wrapper {
+.Dropdown-Wrapper {
   position: relative;
   width: 100%;
   display: flex;
 }
 
-button {
+.Dropdown-Button {
   text-decoration: none;
   color: black;
   padding: 15px;
@@ -23,7 +23,7 @@ button {
   transition: background-color 0.5s ease;
 }
 
-button:hover {
+.Dropdown-Button:hover {
   background-color: rgb(224, 224, 224);
 }
 
@@ -35,4 +35,14 @@ button:hover {
   transform: translate(0%, -100%);
   display: flex;
   flex-direction: column;
+}
+
+.Dropdown-Button > span.Dropdown-Text {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .Dropdown-Button > span.Dropdown-Text {
+    display: inline;
+  }
 }

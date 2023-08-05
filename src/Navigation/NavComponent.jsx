@@ -1,6 +1,7 @@
 import NavItemComponent from "./NavItemComponent";
 import "./Nav.css";
 import DropdownComponent from "./DropdownComponent";
+import IconComponent from "../IconComponent";
 
 const routes = [
   {
@@ -72,7 +73,8 @@ export default function NavComponent() {
   return (
     <nav className="Nav">
       <div className="Title">
-        <NavItemComponent descripcion="Reactagram"></NavItemComponent>
+        <span>Reactagram</span>
+        <IconComponent icono="camera"></IconComponent>
       </div>
       <div className="Routes">
         {routes.map((item) => (
