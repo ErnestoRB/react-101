@@ -1,19 +1,27 @@
-.Content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: 1rem;
+.Footer-Content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
 }
 
-.Content > .links, p{
-    color: rgb(195, 195, 195);
+.Footer-Content > .links,
+p {
+  color: rgb(195, 195, 195);
 }
 
-.Content > .links:hover{
-    cursor: pointer;
-    text-decoration: underline;
+.Footer-Content > .links:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-.Content p{
-    margin: 3px;
+.Footer-Content p {
+  margin: 3px;
+}
+
+@media screen and (min-width: 700px) {
+  .Footer-Content {
+    justify-content: left;
+  }
 }

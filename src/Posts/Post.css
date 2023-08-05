@@ -1,6 +1,18 @@
 article.Post {
   display: flex;
   flex-direction: column;
-  width: 470px;
+  width: 100%;
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 700px) {
+  article.Post {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  article.Post {
+    width: 470px;
+  }
 }
