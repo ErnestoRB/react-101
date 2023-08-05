@@ -11,10 +11,13 @@ export default function MainComponent() {
       <div className="content">
         <StoriesComponent stories={Array(10).fill({})}></StoriesComponent>
         <FeedComponent></FeedComponent>
+        <FooterComponent></FooterComponent>
       </div>
       <div className="side">
         <MiniProfileComponent isProfile></MiniProfileComponent>
-        <SuggestionsComponent suggestions={Array(5).fill({})}></SuggestionsComponent>
+        <SuggestionsComponent
+          suggestions={Array(5).fill({})}
+        ></SuggestionsComponent>
         <FooterComponent></FooterComponent>
       </div>
     </main>

@@ -1,9 +1,8 @@
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 230px;
-  grid-template-areas: "content content side";
+  display: flex;
+  flex-direction: column;
   padding: 40px;
-  width: fit-content;
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -13,5 +12,22 @@ main > div.content {
 }
 
 div.side {
-  grid-area: side;
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 230px;
+    grid-template-areas: "content content side";
+  }
+
+  div.side {
+    display: block;
+    grid-area: side;
+  }
+
+  main > div.content > footer {
+    display: none;
+  }
 }
