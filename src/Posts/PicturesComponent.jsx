@@ -1,12 +1,12 @@
 import { useRef, useState } from "react";
 import "./Picture.css";
 import IconComponent from "../IconComponent";
+import { API_URL } from "../utils/api";
 
 export default function PicturesComponent({ pictures = [] }) {
   const containerRef = useRef(null);
   const [page, setPage] = useState(0);
 
-  console.log({ page });
   return (
     <div className="Pictures">
       <div
