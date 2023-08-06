@@ -77,10 +77,11 @@ export default function NavComponent() {
         <IconComponent icono="camera"></IconComponent>
       </div>
       <div className="Routes">
-        {routes.map((item) => (
+        {routes.map((item, descripcion) => (
           <NavItemComponent
             icono={item.icono}
             descripcion={item.descripcion}
+            key={descripcion}
           ></NavItemComponent>
         ))}
       </div>

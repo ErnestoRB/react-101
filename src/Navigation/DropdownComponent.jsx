@@ -26,6 +26,7 @@ export default function DropdownComponent({
             <NavItemComponent
               icono={item.icono}
               descripcion={item.descripcion}
+              key={item.descripcion}
             ></NavItemComponent>
           ))}
         </div>

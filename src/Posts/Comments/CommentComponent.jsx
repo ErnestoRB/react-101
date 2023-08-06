@@ -7,12 +7,13 @@ export default function CommentComponent({ comment }) {
     <div className="Comment">
       <div className="image">
         <UserImageComponent
-          src={comment.author.url}
+          src={comment.author.picture.thumbnail}
           size={24}
         ></UserImageComponent>
       </div>
       <div className="content">
         <b>{comment.author.username}</b>
+        {comment.text}
       </div>
       <div className="actions">
         <span>Me gusta</span>

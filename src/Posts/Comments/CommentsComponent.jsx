@@ -1,22 +1,10 @@
 import CommentComponent from "./CommentComponent";
 
-export default function CommentsComponent({
-  comments = [
-    {
-      date: new Date(),
-      author: {
-        name: "Ernesto Ramírez",
-        username: "ernestorb",
-        url: "https://avatars.githubusercontent.com/u/55329286?v=4",
-      },
-      text: "Looking good, m8!",
-    },
-  ],
-}) {
+export default function CommentsComponent({ comments = [] }) {
   return (
     <div>
-      {comments.map((comment) => (
-        <CommentComponent comment={comment}></CommentComponent>
+      {comments.map((comment, i) => (
+        <CommentComponent key={i} comment={comment}></CommentComponent>
       ))}
     </div>
   );

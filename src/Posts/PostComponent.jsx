@@ -7,10 +7,13 @@ import "./Post.css";
 export default function PostComponent({ post }) {
   return (
     <article className="Post">
-      <AuthorComponent></AuthorComponent>
-      <PicturesComponent></PicturesComponent>
+      <AuthorComponent
+        author={post.author}
+        postDate={post.date}
+      ></AuthorComponent>
+      <PicturesComponent pictures={post.fotos}></PicturesComponent>
       <ActionsComponent></ActionsComponent>
-      <CommentsComponent></CommentsComponent>
+      <CommentsComponent comments={post.comments}></CommentsComponent>
     </article>
   );
 }

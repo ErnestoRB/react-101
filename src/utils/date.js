@@ -2,13 +2,13 @@ const relativeTimeFormatter = new Intl.RelativeTimeFormat("es", {
   style: "short",
 });
 
-export function getRelativeDate(date) {
+export function getRelativeDate(dateOrString) {
   const now = new Date();
+
+  const date = new Date(dateOrString); // convertir el dato que se entregue a fecha!
 
   let finalString = "";
   const diff = (date.getTime() - now.getTime()) / 1000; // segundos
-
-  console.log({ diff });
   if (diff > -60) {
     finalString = relativeTimeFormatter.format(diff, "seconds");
   } else if (diff > -3600) {

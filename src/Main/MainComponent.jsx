@@ -9,7 +9,7 @@ export default function MainComponent() {
   return (
     <main>
       <div className="content">
-        <StoriesComponent stories={Array(10).fill({})}></StoriesComponent>
+        <StoriesComponent></StoriesComponent>
         <FeedComponent></FeedComponent>
         <FooterComponent></FooterComponent>
       </div>

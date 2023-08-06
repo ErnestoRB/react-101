@@ -15,7 +15,7 @@ div.side {
   display: none;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 230px;
