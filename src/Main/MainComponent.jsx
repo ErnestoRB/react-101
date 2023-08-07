@@ -15,9 +15,7 @@ export default function MainComponent() {
       </div>
       <div className="side">
         <MiniProfileComponent isProfile></MiniProfileComponent>
-        <SuggestionsComponent
-          suggestions={Array(5).fill({})}
-        ></SuggestionsComponent>
+        <SuggestionsComponent></SuggestionsComponent>
         <FooterComponent></FooterComponent>
       </div>
     </main>

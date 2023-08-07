@@ -1,7 +1,10 @@
 import "./Suggestions.css";
 import MiniProfileComponent from "./MiniProfileComponent";
+import useSuggestions from "../hooks/useSuggestions";
 
-export default function SuggestionsComponent({ suggestions = [] }) {
+export default function SuggestionsComponent() {
+  const  { suggestions } = useSuggestions();
+
   return (
     <div className="Suggestions">
         <div className="showAll">
@@ -9,8 +12,8 @@ export default function SuggestionsComponent({ suggestions = [] }) {
             <a href="" className="viewAll">Ver todo</a>
         </div>
         <div className="accounts">
-            {suggestions.map((account) => (
-            <MiniProfileComponent></MiniProfileComponent>
+            {suggestions.map((suggestions, i) => (
+            <MiniProfileComponent suggestions={suggestions} key={i}></MiniProfileComponent>
             ))}
         </div>
     </div>

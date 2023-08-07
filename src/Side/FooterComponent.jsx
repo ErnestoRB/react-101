@@ -44,7 +44,7 @@ export default function FooterComponent() {
       </a>
       <br />
       <br />
-      <p>© 2023 INSTAGRAM FROM META</p>
+      <p>© 2023 REACTAGRAM FROM BASH CRASHERS</p>
     </footer>
   );
 }
