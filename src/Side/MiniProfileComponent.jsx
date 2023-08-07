@@ -4,9 +4,9 @@ import "./MiniProfile.css";
 
 export default function MiniProfileComponent({
   user = {
-    name: "Ernesto Ramírez",
-    username: "ernestorb",
-    url: "https://avatars.githubusercontent.com/u/55329286?v=4",
+    name: "Iker Jimenez",
+    username: "haitore",
+    url: "https://avatars.githubusercontent.com/u/73982618?s=400&u=4f1efdef637aa747da92b42708abfe8843074df7&v=4",
   },
   suggestions = [],
   isProfile = false,

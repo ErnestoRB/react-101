@@ -10,7 +10,7 @@ export default function StoryComponent({
     <div className="Story-Wrapper">
       <div className={`Story ${isClose ? "border-close" : "border-normal"}`}>
         <UserImageComponent
-          src={author.picture.thumbnail}
+          src={author.picture.large}
           size={size}
         ></UserImageComponent>
       </div>
