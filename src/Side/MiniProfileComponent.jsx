@@ -28,7 +28,7 @@ export default function MiniProfileComponent({
         </span>
       </div>
       <div className="actions">
-        <a href="#" className="blue-link">
+        <a href={isProfile ? "profile" : "#"} className="blue-link">
           {isProfile ? "Cambiar" : "Seguir"}
         </a>
       </div>
