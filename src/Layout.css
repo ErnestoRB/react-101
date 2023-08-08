@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Main content */
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 100%;
+  overflow-x: hidden;
+}

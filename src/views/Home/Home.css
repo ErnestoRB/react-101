@@ -1,33 +1,25 @@
-main {
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-main > div.content {
+main#main > div.Home-Grid > div.content {
   align-items: center;
   grid-area: content;
 }
 
-div.side {
+main#main > div.Home-Grid > div.side {
   display: none;
 }
 
 @media screen and (min-width: 900px) {
-  main {
+  main#main > div.Home-Grid {
     display: grid;
     grid-template-columns: 1fr 1fr 230px;
     grid-template-areas: "content content side";
   }
 
-  div.side {
+  main#main > div.Home-Grid > div.side {
     display: block;
     grid-area: side;
   }
 
-  main > div.content > footer {
+  main#main > div.Home-Grid > div.content > footer {
     display: none;
   }
 }

@@ -7,6 +7,7 @@ const routes = [
   {
     icono: "home",
     descripcion: "Inicio",
+    href: "",
   },
   {
     icono: "search",
@@ -35,6 +36,7 @@ const routes = [
   {
     icono: "account_circle",
     descripcion: "Perfil",
+    href: "profile",
   },
 ];
 
@@ -81,6 +83,7 @@ export default function NavComponent() {
           <NavItemComponent
             icono={item.icono}
             descripcion={item.descripcion}
+            href={item.href}
             key={descripcion}
           ></NavItemComponent>
         ))}

@@ -1,13 +1,13 @@
-import FeedComponent from "../Posts/FeedComponent";
-import MiniProfileComponent from "../Side/MiniProfileComponent";
-import StoriesComponent from "../Stories/StoriesComponent";
-import SuggestionsComponent from "../Side/SuggestionsComponent";
-import FooterComponent from "../Side/FooterComponent";
-import "./Main.css";
+import FeedComponent from "../../Posts/FeedComponent";
+import MiniProfileComponent from "../../Side/MiniProfileComponent";
+import StoriesComponent from "../../Stories/StoriesComponent";
+import SuggestionsComponent from "../../Side/SuggestionsComponent";
+import FooterComponent from "../../Side/FooterComponent";
+import "./Home.css";
 
 export default function MainComponent() {
   return (
-    <main>
+    <div className="Home-Grid">
       <div className="content">
         <StoriesComponent></StoriesComponent>
         <FeedComponent></FeedComponent>
@@ -18,6 +18,6 @@ export default function MainComponent() {
         <SuggestionsComponent></SuggestionsComponent>
         <FooterComponent></FooterComponent>
       </div>
-    </main>
+    </div>
   );
 }
