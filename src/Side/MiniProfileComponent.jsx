@@ -4,9 +4,6 @@ import "./MiniProfile.css";
 import useMe from "../hooks/useMe";
 
 export default function MiniProfileComponent({
-  user = {
-    url: "https://avatars.githubusercontent.com/u/73982618?s=400&u=4f1efdef637aa747da92b42708abfe8843074df7&v=4",
-  },
   suggestions = [],
   isProfile = false,
 }) {
@@ -17,14 +14,14 @@ export default function MiniProfileComponent({
 
   return (
     <div className="MiniProfile">
-      <div className="image">
-        <UserImageComponent
-          src={isProfile ? user.url : suggestions.picture.thumbnail}
-          size={40}
-        />
-      </div>
       {me && (
         <>
+          <div className="image">
+            <UserImageComponent
+              src={isProfile ? me.author.picture.thumbnail : suggestions.picture.thumbnail}
+              size={40}
+            />
+          </div>
           <div className="name">
             <b>{isProfile ? me.author.name : suggestions.name}</b>
             <span className="username">
