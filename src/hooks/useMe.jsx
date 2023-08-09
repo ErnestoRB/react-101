@@ -3,7 +3,7 @@ import { useState } from "react";
 import { API_URL } from "../utils/api";
 
 export default function useMe() {
-  const [me, setMe] = useState([]);
+  const [me, setMe] = useState(null);
 
   useEffect(() => {
     fetch(`${API_URL}/api/me`)
