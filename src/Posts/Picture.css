@@ -1,17 +1,28 @@
 .Pictures {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
 
 .Picture {
-  background-color: black;
   display: flex;
   width: 100%;
+  height: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
-.Picture > img {
-  object-fit: contain;
+.Picture-Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex: none;
+}
+
+.Picture-Container > img {
+  object-fit: cover;
   width: 100%;
 }
 

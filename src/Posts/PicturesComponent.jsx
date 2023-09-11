@@ -15,7 +15,11 @@ export default function PicturesComponent({ pictures = [] }) {
         style={{ transform: `translateX(-${page}00%)` }}
       >
         {pictures.map((pic, i) => {
-          return <img key={pic} src={`${API_URL}${pic}`} alt="picture"></img>;
+          return (
+            <div className="Picture-Container">
+              <img key={pic} src={`${API_URL}${pic}`} alt="picture"></img>
+            </div>
+          );
         })}
       </div>
       {page > 0 && (
