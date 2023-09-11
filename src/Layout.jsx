@@ -1,15 +1,18 @@
 import { Outlet } from "react-router-dom";
 import "./Layout.css";
 import NavComponent from "./Navigation/NavComponent";
+import OverlayComponent from "./Overlay/OverLayComponent";
 
 function Layout() {
   return (
-    <div className="App">
-      <NavComponent></NavComponent>
-      <main id="main">
-        <Outlet></Outlet>
-      </main>
-    </div>
+    <OverlayComponent>
+      <div className="App">
+        <NavComponent></NavComponent>
+        <main id="main">
+          <Outlet></Outlet>
+        </main>
+      </div>
+    </OverlayComponent>
   );
 }
 
