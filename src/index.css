@@ -26,3 +26,8 @@ a {
 a.blue-link {
   color: var(--link);
 }
+
+hr {
+  border: 0.25px solid rgb(235, 235, 235);
+  background-color: transparent;
+}

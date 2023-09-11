@@ -3,7 +3,7 @@
   overflow-x: auto;
   flex-direction: row;
   column-gap: 10px;
-  max-width: calc(8 * (68px) + 10px * 7);
+  max-width: calc(8 * (68px) + (11px * 8));
 }
 
 .Stories-Wrapper {

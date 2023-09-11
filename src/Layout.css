@@ -9,7 +9,20 @@
 main {
   display: flex;
   flex-direction: column;
-  padding: 40px;
   width: 100%;
+  padding: 20px 10px;
   overflow-x: hidden;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    padding: 40px;
+  }
 }

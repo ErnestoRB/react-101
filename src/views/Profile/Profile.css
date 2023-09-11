@@ -1,56 +1,59 @@
-.MainProfile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.MainProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 950px;
+  width: 100%;
 }
 
-.firstSec{
-    margin-right: 5rem;
+.MainProfile > .User-Info {
+  column-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2.5rem;
 }
 
-.secondSec{
-    margin-left: 5rem;
+.User-Info > .Photo {
 }
 
-.display, .nameOptions, .userData{
-    display: flex;
-    align-items: center;
-}
-.secondSec{
-    display: flex;
-    flex-direction: column;
+.User-Info > .Text {
 }
 
-.buttons{
-    margin: 1rem;
+.Text > .User-Stats {
+  display: flex;
+  column-gap: 0.5rem;
 }
 
-.buttons > button{
-    margin: 5px;
+.User-Info > .Text > .Name {
+  display: flex;
+  column-gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.userData > p{
-    margin-right: 6rem;
+.User-Info > .Text > .Name > .Buttons {
+  display: flex;
+  column-gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.nameOptions > p{
-    font-weight: bold;
+.editProfile {
+  border: none;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
 }
 
-.nameOptions, .editProfile{
-    font-size: 1rem;
+.editProfile:hover {
+  background-color: #cbcbcb;
+  cursor: pointer;
 }
 
-.editProfile{
-    border: none;
-    padding: 1rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    border-radius: 5px;
-}
-
-.editProfile:hover{
-    background-color: #cbcbcb;
-    cursor: pointer;
+@media screen and (min-width: 600px) {
+  .MainProfile > .User-Info {
+    flex-direction: row;
+  }
 }
