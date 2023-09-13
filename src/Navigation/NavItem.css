@@ -1,0 +1,30 @@
+a.Nav-Item {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  column-gap: 5px;
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
+  background-color: white;
+}
+
+a.Nav-Item:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+a.Nav-Item:visited {
+  color: black;
+}
+
+a.Nav-Item > span.Nav-Item-Text{
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  a.Nav-Item > span.Nav-Item-Text {
+    display: inline;
+  }
+}

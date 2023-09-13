@@ -1,0 +1,15 @@
+.Posts-Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  width: 100%;
+  gap: 0.3rem;
+}
+
+.Posts-Grid > .Posts-Preview {
+  width: 100%;
+}
+
+.Posts-Grid > .Posts-Preview > img {
+  width: 100%;
+}

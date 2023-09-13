@@ -1,0 +1,17 @@
+div.Error {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+div.Error > div.Error-Message {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.Error-Footer {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,27 @@
+.Story {
+  padding: 2px;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+}
+
+.Story > img {
+  border: 2px solid white;
+}
+
+.Story-Wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.Story-Wrapper > span {
+  font-size: 10px;
+}
+
+.border-close {
+  background-image: linear-gradient(to right, #00cf44, #00cc2f);
+}
+
+.border-normal {
+  background-image: linear-gradient(to right, #fec300, #d300c5);
+}

@@ -1,0 +1,8 @@
+.Post-Actions {
+  display: flex;
+  padding-block: 10px;
+}
+
+.Post-Actions > .first {
+  flex: 1;
+}

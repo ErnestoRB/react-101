@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Main content */
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 10px;
+  overflow-x: hidden;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    padding: 40px;
+  }
+}

@@ -1,0 +1,30 @@
+main#main > div.Home-Grid {
+  width: 100%;
+}
+
+main#main > div.Home-Grid > div.content {
+  align-items: center;
+  grid-area: content;
+}
+
+main#main > div.Home-Grid > div.side {
+  display: none;
+  padding-left: 2rem;
+}
+
+@media screen and (min-width: 900px) {
+  main#main > div.Home-Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 230px;
+    grid-template-areas: "content content side";
+  }
+
+  main#main > div.Home-Grid > div.side {
+    display: block;
+    grid-area: side;
+  }
+
+  main#main > div.Home-Grid > div.content > footer {
+    display: none;
+  }
+}

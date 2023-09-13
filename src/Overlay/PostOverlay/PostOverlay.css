@@ -1,0 +1,54 @@
+div.Post-Overlay {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  width: 100%;
+}
+
+.Post-Overlay-Left {
+}
+
+.Post-Overlay-Right {
+  background-color: white;
+  flex: 1;
+}
+
+.Post-Overlay-Name {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.Post-Overlay-Name,
+.Post-Overlay-Comments {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  div.Post-Overlay {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  div.Post-Overlay {
+    width: 700px;
+    flex-direction: row;
+  }
+  .Post-Overlay-Left {
+    flex: 1;
+  }
+  .Post-Overlay-Right {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  div.Post-Overlay {
+    flex-direction: row;
+  }
+
+  div.Post-Overlay {
+    width: 900px;
+  }
+}
