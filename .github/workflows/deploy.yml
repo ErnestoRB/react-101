@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: 18
       - run: npm install
-      - run: npm run build
+      - run: npm run build:gh
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
@@ -44,7 +44,7 @@ jobs:
         with:
           # Upload entire repository
           name: github-pages
-          path: './dist'
+          path: "./dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
