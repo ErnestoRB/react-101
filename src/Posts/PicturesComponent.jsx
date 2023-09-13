@@ -16,8 +16,8 @@ export default function PicturesComponent({ pictures = [] }) {
       >
         {pictures.map((pic, i) => {
           return (
-            <div className="Picture-Container">
-              <img key={pic} src={`${API_URL}${pic}`} alt="picture"></img>
+            <div className="Picture-Container" key={pic}>
+              <img src={`${API_URL}${pic}`} alt="picture"></img>
             </div>
           );
         })}

@@ -7,32 +7,36 @@ import MainComponent from "./views/Home/HomeComponent";
 import ProfileComponent from "./views/Profile/ProfileComponent";
 import ErrorComponent from "./views/Error/ErrorComponent";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    errorElement: <ErrorComponent></ErrorComponent>,
-    children: [
-      {
-        errorElement: <ErrorComponent></ErrorComponent>,
-        children: [
-          {
-            index: true,
-            element: <MainComponent></MainComponent>,
-          },
-          {
-            path: "profile",
-            element: <ProfileComponent></ProfileComponent>,
-          },
-          {
-            path: "*",
-            element: <ErrorComponent></ErrorComponent>,
-          },
-        ],
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+
+      element: <Layout />,
+      errorElement: <ErrorComponent></ErrorComponent>,
+      children: [
+        {
+          errorElement: <ErrorComponent></ErrorComponent>,
+          children: [
+            {
+              index: true,
+              element: <MainComponent></MainComponent>,
+            },
+            {
+              path: "profile",
+              element: <ProfileComponent></ProfileComponent>,
+            },
+            {
+              path: "*",
+              element: <ErrorComponent></ErrorComponent>,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  { basename: import.meta.env.BASE_URL }
+);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:gh": "vite build --base /react-101/",
+    "build:gh": "vite build --base /react-101/ && cp ./dist/index.html ./dist/404.html",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -1,1 +1,1 @@
-export const API_URL = "http://react-101-api.dev.ernestorb.com";
+export const API_URL = "https://react-101-api.dev.ernestorb.com";

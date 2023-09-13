@@ -10,7 +10,7 @@ export function PostsGrid({ posts = [] }) {
   return (
     <div className="Posts-Grid">
       {posts.map((post) => (
-        <div className="Posts-Preview">
+        <div className="Posts-Preview" key={post.fotos[0]}>
           <img
             src={`${API_URL}${post.fotos[0]}`}
             alt=""
